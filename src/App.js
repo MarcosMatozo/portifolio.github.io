@@ -1,11 +1,11 @@
 import React  from 'react';
 import { Routes, Route, Outlet, Link, BrowserRouter } from "react-router-dom";
-
+import Introducing from './components/Introducing';
 export default function App() {
   return (
     <div>
-      <h1>Marcos Henrique Matozo de Amorim</h1>
-      <h2>Desenvolvedor com especialidade em Front-end</h2>
+      
+      <Introducing></Introducing>
 
       <p>
         This example demonstrates some of the core features of React Router

@@ -15,9 +15,19 @@ module.exports = {
         test: /\.(scss|sass)$/, // regex para encontrar arquivos .scss
         use: [
           'style-loader', // injeta CSS no DOM
-          'css-loader',   // interpreta @import e url() como importações/requisições de CSS
+          {
+            loader: 'css-loader',
+            // options: {
+            //   modules: true,  // Ativar CSS Modules
+            // },
+          },
+          // 'css-loader',   // interpreta @import e url() como importações/requisições de CSS
           'sass-loader',  // compila Sass para CSS
         ],
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(js|jsx)$/, // regex para encontrar arquivos .js ou .jsx
@@ -25,6 +35,18 @@ module.exports = {
         use: {
           loader: 'babel-loader', // usa o Babel para transpilar JavaScript
         },
+      },
+      {
+        test: /\.(mp4|webm|ogg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]',
+              outputPath: 'media'
+            }
+          }
+        ]
       },
       {
         test: /\.tsx?$/,

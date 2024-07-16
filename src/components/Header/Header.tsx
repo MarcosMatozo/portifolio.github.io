@@ -1,23 +1,22 @@
 import React  from 'react';
-import { Routes, Route, Outlet, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Outlet, Link, BrowserRouter, HashRouter } from "react-router-dom";
 import './Header.sass'
 import FirstSectionHome from '../Home/Sections/FirstSectionHome';
+import AboutMyself from '../Home/Sections/AboutMyself';
 
 export default function Header(){
     return(
-        <div className="">
-            <BrowserRouter>
-                <Routes>
-                    <Route path="*" element={<Layout />} />
-                 </Routes>
-                <Routes>
-                    <Route index element={<FirstSectionHome />} />
-                    <Route path="about" element={<About />} />
-                    <Route path="dashboard" element={<Dashboard />} />
-                    <Route path="*" element={<NoMatch />} />
-                 </Routes>
-             </BrowserRouter>
-        </div>
+          <HashRouter>
+              <Routes>
+                  <Route path="*" element={<Layout />} />
+                </Routes>
+              <Routes>
+                  <Route index element={<FirstSectionHome />} />
+                  <Route path="sobre-mim" element={<AboutMyself />} />
+                  <Route path="habilidades" element={<Dashboard />} />
+                  <Route path="*" element={<NoMatch />} />
+                </Routes>
+            </HashRouter>
     )
 }
 
@@ -28,17 +27,14 @@ function Layout() {
             share across all the pages on your site, like navigation. */}
         <nav>
           <ul>
-            <li>
+            <li className="animate__animated">
               <Link to="/">Início</Link>
             </li>
-            <li>
-              <Link to="/about">Sobre mim</Link>
+            <li className="animate__animated">
+              <Link to="/sobre-mim">Sobre mim</Link>
             </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-            <li>
-              <Link to="/nothing-here">Nothing Here</Link>
+            <li className="animate__animated">
+              <Link to="/habilidades">Habilidades</Link>
             </li>
           </ul>
         </nav>

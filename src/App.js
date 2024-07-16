@@ -1,24 +1,19 @@
 import React  from 'react';
 import { Routes, Route, Outlet, Link, BrowserRouter } from "react-router-dom";
-import Introducing from './components/Introducing';
+import Introducing from './components/Introducing/Introducing';
+import FirstSectionHome from './components/Home/Sections/FirstSectionHome';
+import './style/reset.sass'
 export default function App() {
   return (
     <div>
+      <FirstSectionHome></FirstSectionHome>
       
-      <Introducing></Introducing>
 
-      <p>
-        This example demonstrates some of the core features of React Router
-        including nested <code>&lt;Route&gt;</code>s,{" "}
-        <code>&lt;Outlet&gt;</code>s, <code>&lt;Link&gt;</code>s, and using a
-        "*" route (aka "splat route") to render a "not found" page when someone
-        visits an unrecognized URL.
-      </p>
 
       {/* Routes nest inside one another. Nested route paths build upon
             parent route paths, and nested route elements render inside
             parent route elements. See the note about <Outlet> below. */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -27,7 +22,7 @@ export default function App() {
             <Route path="*" element={<NoMatch />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }

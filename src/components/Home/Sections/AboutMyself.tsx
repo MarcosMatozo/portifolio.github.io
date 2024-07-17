@@ -8,7 +8,7 @@ export default function AboutMyself(){
     return(
         <>
         
-            <div className="first-section about">
+            <div className="container-section about">
             
                 <div className="background"></div>
 

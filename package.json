@@ -7,6 +7,7 @@
     "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.24.8",
     "@babel/preset-react": "^7.24.7",
+    "@glidejs/glide": "^3.6.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -55,6 +56,8 @@
     ]
   },
   "devDependencies": {
+    "@types/glidejs__glide": "^3.6.5",
+    "@types/react-slick": "^0.23.13",
     "babel-loader": "^9.1.3",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",

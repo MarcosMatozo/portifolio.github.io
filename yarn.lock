@@ -1334,6 +1334,11 @@
   "resolved" "https://registry.npmjs.org/@eslint/js/-/js-8.57.0.tgz"
   "version" "8.57.0"
 
+"@glidejs/glide@^3.6.2":
+  "integrity" "sha512-oXw7In0IZV69PC0PChQakY+yh+UnqIb5+zfVuEIzub6Kkfl1foo7TAhr2PZXPzihOG9YS57t8wvdzBFEZ0aPVA=="
+  "resolved" "https://registry.npmjs.org/@glidejs/glide/-/glide-3.6.2.tgz"
+  "version" "3.6.2"
+
 "@humanwhocodes/config-array@^0.11.14":
   "integrity" "sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.14.tgz"
@@ -2095,6 +2100,11 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/glidejs__glide@^3.6.5":
+  "integrity" "sha512-OUjzveIu+tiK5VvyPh6jTBJ/vH6+vC+XWzC2KJzpgUW8uancMJBa7R+BlXuvtSPdLw/pQForVasy0fm1D7JWOQ=="
+  "resolved" "https://registry.npmjs.org/@types/glidejs__glide/-/glidejs__glide-3.6.5.tgz"
+  "version" "3.6.5"
+
 "@types/graceful-fs@^4.1.2":
   "integrity" "sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ=="
   "resolved" "https://registry.npmjs.org/@types/graceful-fs/-/graceful-fs-4.1.9.tgz"
@@ -2209,6 +2219,13 @@
   "integrity" "sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg=="
   "resolved" "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.3.0.tgz"
   "version" "18.3.0"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-slick@^0.23.13":
+  "integrity" "sha512-bNZfDhe/L8t5OQzIyhrRhBr/61pfBcWaYJoq6UDqFtv5LMwfg4NsVDD2J8N01JqdAdxLjOt66OZEp6PX+dGs/A=="
+  "resolved" "https://registry.npmjs.org/@types/react-slick/-/react-slick-0.23.13.tgz"
+  "version" "0.23.13"
   dependencies:
     "@types/react" "*"
 

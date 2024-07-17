@@ -8,7 +8,7 @@ import './Section.sass'
 export default function FirstSectionHome(){
     return(
         <>
-            <div className="first-section home">
+            <div className="container-section home">
             
             <div className="background"></div>
                 

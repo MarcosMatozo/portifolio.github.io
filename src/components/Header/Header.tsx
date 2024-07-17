@@ -3,6 +3,7 @@ import { Routes, Route, Outlet, Link, BrowserRouter, HashRouter } from "react-ro
 import './Header.sass'
 import FirstSectionHome from '../Home/Sections/FirstSectionHome';
 import AboutMyself from '../Home/Sections/AboutMyself';
+import Abilities from '../Home/Sections/Abilities';
 
 export default function Header(){
     return(
@@ -13,7 +14,7 @@ export default function Header(){
               <Routes>
                   <Route index element={<FirstSectionHome />} />
                   <Route path="sobre-mim" element={<AboutMyself />} />
-                  <Route path="habilidades" element={<Dashboard />} />
+                  <Route path="habilidades" element={<Abilities />} />
                   <Route path="*" element={<NoMatch />} />
                 </Routes>
             </HashRouter>

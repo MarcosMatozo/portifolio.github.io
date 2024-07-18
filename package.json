@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://MarcosMatozo.github.io/portifolio.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosMatozo/portifolio.github.io.git"
+  },
   "dependencies": {
     "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.24.8",

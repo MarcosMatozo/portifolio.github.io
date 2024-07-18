@@ -17,7 +17,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              url: false,
+              url: true,
             },
           },
           // 'css-loader',   // interpreta @import e url() como importações/requisições de CSS

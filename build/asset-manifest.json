@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portifolio.github.io/static/css/main.dfe06322.css",
+    "main.js": "/portifolio.github.io/static/js/main.575d094b.js",
+    "static/js/845.ec1c9938.chunk.js": "/portifolio.github.io/static/js/845.ec1c9938.chunk.js",
+    "static/media/bg-butt.jpg": "/portifolio.github.io/static/media/bg-butt.ca0f7aaef6798f69ba16.jpg",
+    "static/media/gradient-bg.jpg": "/portifolio.github.io/static/media/gradient-bg.fc196f4882e68aeac26f.jpg",
+    "index.html": "/portifolio.github.io/index.html",
+    "main.dfe06322.css.map": "/portifolio.github.io/static/css/main.dfe06322.css.map",
+    "main.575d094b.js.map": "/portifolio.github.io/static/js/main.575d094b.js.map",
+    "845.ec1c9938.chunk.js.map": "/portifolio.github.io/static/js/845.ec1c9938.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfe06322.css",
+    "static/js/main.575d094b.js"
+  ]
+}

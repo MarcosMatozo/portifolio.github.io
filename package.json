@@ -34,7 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build-webpack",
+    "deploy": "gh-pages -d build",
     "webpack": "webpack serve --open --config webpack.dev.js",
     "build-webpack": "webpack --config webpack.prod.js"
   },

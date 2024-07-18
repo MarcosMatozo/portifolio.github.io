@@ -55,6 +55,9 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         type: 'asset/resource', // substitui o file-loader para Webpack 5
+        generator: {
+          filename: 'images/[name][ext][query]',
+        }
       },
     ],
   },

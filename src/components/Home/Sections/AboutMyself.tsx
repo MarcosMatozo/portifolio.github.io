@@ -10,7 +10,10 @@ export default function AboutMyself(){
         
             <div className="container-section about">
             
-                <div className="background"></div>
+                <div className="background">
+                    <div></div>
+                    <div></div>
+                </div>
 
                 <div className="totalCentered myself  animate__animated  animate__fadeInDown ">
                     <div>

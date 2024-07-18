@@ -1,5 +1,5 @@
 import React  from 'react';
-import { Routes, Route, Outlet, Link, BrowserRouter, HashRouter } from "react-router-dom";
+import { Routes, Route, Outlet, Link, HashRouter } from "react-router-dom";
 import './Header.sass'
 import FirstSectionHome from '../Home/Sections/FirstSectionHome';
 import AboutMyself from '../Home/Sections/AboutMyself';

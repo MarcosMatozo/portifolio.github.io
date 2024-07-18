@@ -1,23 +1,143 @@
+@keyframes load
+    from 
+        width: 0%
+
+@-webkit-keyframes load
+    from 
+        width: 0%
+
+@-moz-keyframes load
+    from 
+        width: 0%
+
+@-o-keyframes load
+    from 
+        width: 0%
+
+    
 .container-section.abilities
+    flex-wrap: wrap
+    flex-direction: column
+    padding-top: 0
     .background
         position: absolute
         left: 0
         top: 0
         width: 100%
         height: 100%
-        background-image: url('./../../../assets/bg-pattern-diagonal-square.jpg')
+        // background-image: url('images/bg-pattern-diagonal-square.jpg')
         background-repeat: repeat
         background-size: auto
         z-index: 0
         opacity: 0.3
     .totalCentered
-        border: 1px solid #b9beda
+        border: none
         padding: 10px
+        margin-bottom: 20px
+        &.first
+            border-bottom: 1px solid #000
         h1
             margin: 0 0 30px
             font-family: "Merriweather", serif
             font-weight: 300
             font-style: normal
+
+        &.banner
+            max-width: 100%
+            border: none
+            width: 100%
+            height: 400px
+            background-image: url(images/bg-butt.jpg)
+            background-position: center 78%
+            background-size: 100%
+            background-repeat: no-repeat
+
+            &.middle
+                background-image: url(images/gradient-bg.jpg)
+                height: 200px
+
+        &.description
+            background-color: #ffffe7
+            color: #000
+            text-align: justify
+            margin: 60px 0
+            p
+                font-size: 2rem
+                margin: 0
+                font-family: 'Josefin Sans'
+                font-weight: 300
+
+        &.indicators
+            width: 100%
+            margin-top: 100px
+            > section
+                text-align: left
+                padding: 0 20px
+                ul
+                    list-style: none
+                    li
+                        display: flex
+                        margin-bottom: 20px
+                        span
+                            &.name
+                                width: 20%
+                            &.level
+                                width: 80%
+                                display: flex
+                                span
+                                    height: 15px
+                                    background-color: #10da42
+                                    animation: load 2s 0s
+                                    -webkit-animation: load 2s 0s
+                                    -moz-animation: load 2s 0s
+                                    -o-animation: load 2s 0s
+                                    border-radius: 10px
+                                    text-align: right
+                                    color: #fff
+                                    font-weight: 700
+                                    line-height: 15px
+                                    padding: 0 10px
+                                &.l100
+                                    span
+                                        width: 100%
+                                &.l90
+                                    span
+                                        width: 90%
+                                &.l80
+                                    span
+                                        width: 80%
+                                &.l70
+                                    span
+                                        width: 70%
+                                &.l60
+                                    span
+                                        width: 60%
+                                        background-color: #e7f339
+                                &.l50
+                                    span
+                                        width: 50%
+                                        background-color: #e7f339
+                                &.l40
+                                    span
+                                        width: 40%
+                                        background-color: #e7f339
+                                &.l30
+                                    span
+                                        width: 30%
+                                        background-color: #cf2222
+                                &.l20
+                                    span
+                                        width: 20%
+                                        background-color: #cf2222
+                                &.l10
+                                    span
+                                        width: 10%
+                                        background-color: #cf2222
+                                &.l0
+                                    span
+                                        width: 0
+                                        background-color: #cf2222
+            
 
     // SLider
     .glide
@@ -25,8 +145,11 @@
             display: block
             width: 100%
         .glide__slide
-            padding: 0 70px
+            padding: 0 10px
             margin: 0
-        svg
+        svg, img
             max-width: 100%
-            max-height: 120px
+            max-height: 100px
+        p
+            font-family: "Merriweather", serif
+            font-size: 0.75rem

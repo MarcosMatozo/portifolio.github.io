@@ -6,8 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/',
-    globalObject: 'self'
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -17,9 +16,9 @@ module.exports = {
           'style-loader', // injeta CSS no DOM
           {
             loader: 'css-loader',
-            // options: {
-            //   modules: true,  // Ativar CSS Modules
-            // },
+            options: {
+              url: false,
+            },
           },
           // 'css-loader',   // interpreta @import e url() como importações/requisições de CSS
           'sass-loader',  // compila Sass para CSS

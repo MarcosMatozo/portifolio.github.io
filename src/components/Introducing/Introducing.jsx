@@ -1,6 +1,5 @@
 import React  from 'react';
 import './Introducing.sass'
-import img from './../../assets/marcos-rounded-purple.png'
 
 
 export default function Introducing(){
@@ -8,7 +7,7 @@ export default function Introducing(){
         <>  
             <div className="totalCentered Introducing">
                 <div className="left">
-                    <img className=' animate__animated  animate__tada' src={img} alt="" />
+                    <img className=' animate__animated  animate__tada' src='images/marcos-rounded-purple.png' alt="" />
                 </div>
                 <div className="right">
                     <h1>Marcos Matozo</h1>

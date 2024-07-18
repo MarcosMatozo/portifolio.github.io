@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portifolio.github.io/static/css/main.56bce6c9.css",
-    "main.js": "/portifolio.github.io/static/js/main.df2f88e8.js",
+    "main.css": "/portifolio.github.io/static/css/main.dfe06322.css",
+    "main.js": "/portifolio.github.io/static/js/main.575d094b.js",
     "static/js/845.ec1c9938.chunk.js": "/portifolio.github.io/static/js/845.ec1c9938.chunk.js",
-    "static/media/bg-first-section.gif": "/portifolio.github.io/static/media/bg-first-section.dd0ac80b23b032b8a35f.gif",
-    "static/media/marcos-rounded-purple.png": "/portifolio.github.io/static/media/marcos-rounded-purple.f8593b33955557237bff.png",
+    "static/media/bg-butt.jpg": "/portifolio.github.io/static/media/bg-butt.ca0f7aaef6798f69ba16.jpg",
+    "static/media/gradient-bg.jpg": "/portifolio.github.io/static/media/gradient-bg.fc196f4882e68aeac26f.jpg",
     "index.html": "/portifolio.github.io/index.html",
-    "main.56bce6c9.css.map": "/portifolio.github.io/static/css/main.56bce6c9.css.map",
-    "main.df2f88e8.js.map": "/portifolio.github.io/static/js/main.df2f88e8.js.map",
+    "main.dfe06322.css.map": "/portifolio.github.io/static/css/main.dfe06322.css.map",
+    "main.575d094b.js.map": "/portifolio.github.io/static/js/main.575d094b.js.map",
     "845.ec1c9938.chunk.js.map": "/portifolio.github.io/static/js/845.ec1c9938.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56bce6c9.css",
-    "static/js/main.df2f88e8.js"
+    "static/css/main.dfe06322.css",
+    "static/js/main.575d094b.js"
   ]
 }

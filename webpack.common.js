@@ -2,26 +2,26 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', // ou o caminho do seu arquivo de entrada
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/',
+    assetModuleFilename: 'assets/[name][ext]'
   },
   module: {
     rules: [
       {
-        test: /\.(scss|sass)$/, // regex para encontrar arquivos .scss
+        test: /\.(scss|sass)$/,
         use: [
-          'style-loader', // injeta CSS no DOM
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
               url: false,
             },
           },
-          // 'css-loader',   // interpreta @import e url() como importações/requisições de CSS
-          'sass-loader',  // compila Sass para CSS
+          'sass-loader',
         ],
       },
       {
@@ -29,10 +29,10 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(js|jsx)$/, // regex para encontrar arquivos .js ou .jsx
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', // usa o Babel para transpilar JavaScript
+          loader: 'babel-loader',
         },
       },
       {
@@ -54,15 +54,12 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        type: 'asset/resource', // substitui o file-loader para Webpack 5
-        generator: {
-          filename: '[name][ext][query]',
-        }
+        type: 'asset/resource'
       },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx'], // resolve esses tipos de arquivos
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -7,7 +7,7 @@ export default function Introducing(){
         <>  
             <div className="totalCentered Introducing">
                 <div className="top">
-                    <img className=' animate__animated  animate__tada' src='images/marcos-rounded-purple.png' alt="" />
+                    <img className=' animate__animated  animate__tada' src='./images/marcos-rounded-purple.png' alt="" />
                 </div>
                 <div className="right">
                     <h1>Marcos Matozo</h1>

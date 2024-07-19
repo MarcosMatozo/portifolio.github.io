@@ -41,7 +41,8 @@
     "deploy": "gh-pages -d build",
     "webpack": "webpack serve --open --config webpack.dev.js",
     "build-webpack": "webpack --config webpack.prod.js && node deploy-git-pages.js",
-    "deploy-gitpg": "node deploy-git-pages.js"
+    "deploy-gitpg": "node deploy-git-pages.js",
+    "build2": "webpack"
   },
   "eslintConfig": {
     "extends": [

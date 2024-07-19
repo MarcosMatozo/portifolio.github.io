@@ -17,7 +17,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              url: true,
+              url: false,
             },
           },
           // 'css-loader',   // interpreta @import e url() como importações/requisições de CSS
@@ -56,7 +56,7 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         type: 'asset/resource', // substitui o file-loader para Webpack 5
         generator: {
-          filename: 'images/[name][ext][query]',
+          filename: '[name][ext][query]',
         }
       },
     ],
@@ -80,6 +80,5 @@ module.exports = {
         minifyURLs: true,
       }
     }),
-  ],
-  watch: true
+  ]
 };

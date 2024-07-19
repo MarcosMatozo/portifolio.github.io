@@ -11,8 +11,8 @@ const Cursor = styled.div`
     transform: translate3d(0, 0, 0);
     transition: none;
     z-index: 999999999;
-    box-shadow: 0 0 12px rgba(30, 33, 186, 0.66);
-    background-color: rgba(19, 146, 238, 0.16);
+    box-shadow: 0 0 12px rgb(21, 94, 233);
+    background-color: #ffffff5c;
 `;
 
 export default function CustomCursor() {
